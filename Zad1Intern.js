@@ -33,8 +33,6 @@ function subsetSum(arr, parts)
     if (sum === targetNumb) 
     {
       parts--;
-      totalSum = getSumArray(arr);
-      targetNumb = getTargetedNumber(totalSum, parts);
       arrOfArrays.push(newArr);
       return subsetSum(arr, parts);
     }
